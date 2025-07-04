@@ -6,7 +6,7 @@
 }
 
 body {
-  background: radial-gradient(circle at center, #0f0c29 0%, #1f003d 40%, #000000 100%);
+  background: linear-gradient(135deg, #0fffc1 0%, #0d1b2a 40%, #000000 100%);
   background-color: #0f0c29;
   color: #00ffc8;
   font-family: 'Orbitron', 'Poppins', sans-serif;
@@ -24,14 +24,14 @@ body {
   width: 100%;
   height: 100%;
   background: repeating-radial-gradient(circle at center,
-    rgba(0, 255, 255, 0.06) 0px,
-    rgba(0, 255, 255, 0.06) 2px,
+    rgba(0, 255, 255, 0.05) 0px,
+    rgba(0, 255, 255, 0.05) 2px,
     transparent 3px,
     transparent 40px);
-  animation: moveParticles 15s linear infinite;
+  animation: moveParticles 10s linear infinite;
   z-index: 0;
   pointer-events: none;
-  opacity: 0.25;
+  opacity: 0.2;
   mix-blend-mode: screen;
 }
 
@@ -47,11 +47,11 @@ body {
   background: rgba(255, 255, 255, 0.03);
   padding: 2rem;
   border-radius: 20px;
-  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
-  backdrop-filter: blur(12px);
+  box-shadow: 0 0 50px rgba(0, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
   width: 90%;
   max-width: 420px;
-  border: 1px solid rgba(0, 255, 255, 0.2);
+  border: 1px solid rgba(0, 255, 255, 0.15);
 }
 
 /* Title with Glitch Effect */
@@ -61,7 +61,7 @@ body {
   margin-bottom: 0.5rem;
   position: relative;
   animation: glitch 2s infinite;
-  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 15px #00ffc8;
 }
 
 @keyframes glitch {
@@ -105,16 +105,16 @@ body {
   align-items: center;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.25);
   position: relative;
   transform-style: preserve-3d;
   aspect-ratio: 1;
 }
 
 .cell:hover {
-  background: rgba(0, 255, 255, 0.1);
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+  background: rgba(0, 255, 255, 0.12);
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
 }
 
 /* SVG Symbol Styles */
@@ -153,12 +153,12 @@ body {
 
 /* Extra Glow on Hover */
 .cell:hover svg {
-  filter: drop-shadow(0 0 15px rgba(0, 255, 255, 0.8));
+  filter: drop-shadow(0 0 20px rgba(0, 255, 255, 0.9));
 }
 
 /* Reset Button */
 .reset-btn {
-  background: linear-gradient(145deg, #00ffe0, #00a9ff);
+  background: linear-gradient(145deg, #00ffe0, #00b4ff);
   color: #000;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -166,13 +166,13 @@ body {
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
 .reset-btn:hover {
-  background: linear-gradient(145deg, #00b8a9, #007fff);
+  background: linear-gradient(145deg, #00aeb8, #007fff);
   transform: translateY(-3px);
-  box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.6);
 }
 
 /* Responsive */
